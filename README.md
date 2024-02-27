@@ -324,9 +324,9 @@ If you do not have the necessary dependencies for a task you are attempting, yt-
 To build the standalone executable, you must have Python and `pyinstaller` (plus any of yt-dlp's [optional dependencies](#dependencies) if needed). The executable will be built for the same architecture (x86/ARM, 32/64 bit) as the Python used. You can run the following commands:
 
 ```
-python3 devscripts/install_deps.py --include pyinstaller
-python3 devscripts/make_lazy_extractors.py
-python3 -m bundle.pyinstaller
+python devscripts/install_deps.py --include pyinstaller
+python devscripts/make_lazy_extractors.py
+python -m bundle.pyinstaller
 ```
 
 On some systems, you may need to use `py` or `python` instead of `python3`.
